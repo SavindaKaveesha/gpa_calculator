@@ -130,20 +130,28 @@ namespace gpa_calculator
         private void button1_Click(object sender, EventArgs e)
         {
             double totalGpa = 0;
+            double totalCredits = 0;
 
-            if (sub21CreditBox.Text.Length > 0 && sub21grdBox.Text.Length > 0)
+            ComboBox[] gradeBoxes = { sub21grdBox, sub22grdBox };
+            ComboBox[] creditBoxes = { sub21CreditBox, sub22CreditBox };
+
+            for (int i = 0; i < gradeBoxes.Length; i++)
             {
-                totalGpa += CalculateGrade(sub21grdBox.Text, double.Parse(sub21CreditBox.Text));
-                totCredit += double.Parse(sub21CreditBox.Text);
+                if (creditBoxes[i].Text.Length > 0 && gradeBoxes[i].Text.Length > 0)
+                {
+                    totalGpa += CalculateGrade(gradeBoxes[i].Text, double.Parse(creditBoxes[i].Text));
+                    totalCredits += double.Parse(creditBoxes[i].Text);
+                }
             }
 
-            if (sub22CreditBox.Text.Length > 0 || sub22grdBox.Text.Length > 0)
+            if (totalCredits > 0)
             {
-                totalGpa += CalculateGrade(sub22grdBox.Text, double.Parse(sub22CreditBox.Text));
-                totCredit += double.Parse(sub22CreditBox.Text);
+                label16.Text = (totalGpa / totalCredits).ToString();
             }
-
-            label16.Text = (totalGpa/totCredit).ToString();
+            else
+            {
+                label16.Text = "0"; // Handle the case where totalCredits is 0 to avoid division by zero.
+            }
         }
 
         public double CalculateGrade(string selectedVal, double weight)
@@ -155,6 +163,7 @@ namespace gpa_calculator
 
             return 0; // Grade not found in the dictionary, return a default value.
         }
+
 
     }
 }
