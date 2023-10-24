@@ -17,7 +17,7 @@ namespace gpa_calculator
             InitializeComponent();
         }
 
-        double totalGpa, credit, weight,totCredit;
+        double totalGpa, credit, weight, totCredit;
         string selectedVal;
 
 
@@ -132,8 +132,8 @@ namespace gpa_calculator
             double totalGpa = 0;
             double totalCredits = 0;
 
-            ComboBox[] gradeBoxes = { sub21grdBox, sub22grdBox };
-            ComboBox[] creditBoxes = { sub21CreditBox, sub22CreditBox };
+            ComboBox[] gradeBoxes = { sub21grdBox, sub22grdBox, sub23grdBox, sub24grdBox, sub25grdBox, sub26grdBox, sub27grdBox, sub28grdBox, sub29grdBox, sub210grdBox, sub211grdBox, sub212grdBox };
+            ComboBox[] creditBoxes = { sub21CreditBox, sub22CreditBox, sub23CreditBox, sub24CreditBox, sub25CreditBox, sub26CreditBox, sub27CreditBox, sub28CreditBox, sub29CreditBox, sub210CreditBox, sub211CreditBox, sub212CreditBox };
 
             for (int i = 0; i < gradeBoxes.Length; i++)
             {
@@ -152,6 +152,9 @@ namespace gpa_calculator
             {
                 label16.Text = "0"; // Handle the case where totalCredits is 0 to avoid division by zero.
             }
+
+            totalGpa = 0;
+            totalCredits = 0;
         }
 
         public double CalculateGrade(string selectedVal, double weight)

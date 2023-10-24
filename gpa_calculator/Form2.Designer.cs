@@ -52,6 +52,33 @@
             MechanicsandPropertiesofMatterBox = new ComboBox();
             label3 = new Label();
             panel2 = new Panel();
+            sub212CreditBox = new ComboBox();
+            sub211CreditBox = new ComboBox();
+            sub210CreditBox = new ComboBox();
+            sub29CreditBox = new ComboBox();
+            sub22CreditBox = new ComboBox();
+            sub23CreditBox = new ComboBox();
+            sub24CreditBox = new ComboBox();
+            sub25CreditBox = new ComboBox();
+            sub26CreditBox = new ComboBox();
+            sub27CreditBox = new ComboBox();
+            sub28CreditBox = new ComboBox();
+            label15 = new Label();
+            label14 = new Label();
+            label6 = new Label();
+            sub21CreditBox = new ComboBox();
+            sub212grdBox = new ComboBox();
+            sub22grdBox = new ComboBox();
+            sub23grdBox = new ComboBox();
+            sub211grdBox = new ComboBox();
+            sub210grdBox = new ComboBox();
+            sub29grdBox = new ComboBox();
+            sub24grdBox = new ComboBox();
+            sub25grdBox = new ComboBox();
+            sub28grdBox = new ComboBox();
+            sub27grdBox = new ComboBox();
+            sub26grdBox = new ComboBox();
+            sub21grdBox = new ComboBox();
             textBox12 = new TextBox();
             textBox11 = new TextBox();
             textBox10 = new TextBox();
@@ -67,33 +94,6 @@
             label2 = new Label();
             year1CalBtn = new Button();
             totGpaLbl = new Label();
-            sub21grdBox = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
-            comboBox4 = new ComboBox();
-            comboBox5 = new ComboBox();
-            sub24grdBox = new ComboBox();
-            comboBox11 = new ComboBox();
-            comboBox12 = new ComboBox();
-            comboBox13 = new ComboBox();
-            sub23grdBox = new ComboBox();
-            sub22grdBox = new ComboBox();
-            comboBox16 = new ComboBox();
-            sub21CreditBox = new ComboBox();
-            label6 = new Label();
-            label14 = new Label();
-            label15 = new Label();
-            comboBox18 = new ComboBox();
-            comboBox19 = new ComboBox();
-            comboBox20 = new ComboBox();
-            comboBox21 = new ComboBox();
-            sub24CreditBox = new ComboBox();
-            sub23CreditBox = new ComboBox();
-            sub22CreditBox = new ComboBox();
-            comboBox26 = new ComboBox();
-            comboBox27 = new ComboBox();
-            comboBox28 = new ComboBox();
-            comboBox29 = new ComboBox();
             button1 = new Button();
             label16 = new Label();
             panel1.SuspendLayout();
@@ -104,7 +104,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(377, 22);
+            label1.Location = new Point(489, 9);
             label1.Name = "label1";
             label1.Size = new Size(78, 31);
             label1.TabIndex = 0;
@@ -137,7 +137,7 @@
             panel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             panel1.Location = new Point(28, 66);
             panel1.Name = "panel1";
-            panel1.Size = new Size(484, 443);
+            panel1.Size = new Size(484, 551);
             panel1.TabIndex = 1;
             // 
             // comboBox10
@@ -342,32 +342,32 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ControlDark;
-            panel2.Controls.Add(comboBox29);
-            panel2.Controls.Add(comboBox28);
-            panel2.Controls.Add(comboBox27);
-            panel2.Controls.Add(comboBox26);
+            panel2.Controls.Add(sub212CreditBox);
+            panel2.Controls.Add(sub211CreditBox);
+            panel2.Controls.Add(sub210CreditBox);
+            panel2.Controls.Add(sub29CreditBox);
             panel2.Controls.Add(sub22CreditBox);
             panel2.Controls.Add(sub23CreditBox);
             panel2.Controls.Add(sub24CreditBox);
-            panel2.Controls.Add(comboBox21);
-            panel2.Controls.Add(comboBox20);
-            panel2.Controls.Add(comboBox19);
-            panel2.Controls.Add(comboBox18);
+            panel2.Controls.Add(sub25CreditBox);
+            panel2.Controls.Add(sub26CreditBox);
+            panel2.Controls.Add(sub27CreditBox);
+            panel2.Controls.Add(sub28CreditBox);
             panel2.Controls.Add(label15);
             panel2.Controls.Add(label14);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(sub21CreditBox);
-            panel2.Controls.Add(comboBox16);
+            panel2.Controls.Add(sub212grdBox);
             panel2.Controls.Add(sub22grdBox);
             panel2.Controls.Add(sub23grdBox);
-            panel2.Controls.Add(comboBox13);
-            panel2.Controls.Add(comboBox12);
-            panel2.Controls.Add(comboBox11);
+            panel2.Controls.Add(sub211grdBox);
+            panel2.Controls.Add(sub210grdBox);
+            panel2.Controls.Add(sub29grdBox);
             panel2.Controls.Add(sub24grdBox);
-            panel2.Controls.Add(comboBox5);
-            panel2.Controls.Add(comboBox4);
-            panel2.Controls.Add(comboBox3);
-            panel2.Controls.Add(comboBox2);
+            panel2.Controls.Add(sub25grdBox);
+            panel2.Controls.Add(sub28grdBox);
+            panel2.Controls.Add(sub27grdBox);
+            panel2.Controls.Add(sub26grdBox);
             panel2.Controls.Add(sub21grdBox);
             panel2.Controls.Add(textBox12);
             panel2.Controls.Add(textBox11);
@@ -389,88 +389,367 @@
             panel2.TabIndex = 2;
             panel2.Paint += panel2_Paint;
             // 
+            // sub212CreditBox
+            // 
+            sub212CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub212CreditBox.FormattingEnabled = true;
+            sub212CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub212CreditBox.Location = new Point(392, 504);
+            sub212CreditBox.Name = "sub212CreditBox";
+            sub212CreditBox.Size = new Size(65, 28);
+            sub212CreditBox.TabIndex = 51;
+            // 
+            // sub211CreditBox
+            // 
+            sub211CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub211CreditBox.FormattingEnabled = true;
+            sub211CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub211CreditBox.Location = new Point(392, 462);
+            sub211CreditBox.Name = "sub211CreditBox";
+            sub211CreditBox.Size = new Size(65, 28);
+            sub211CreditBox.TabIndex = 50;
+            // 
+            // sub210CreditBox
+            // 
+            sub210CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub210CreditBox.FormattingEnabled = true;
+            sub210CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub210CreditBox.Location = new Point(392, 424);
+            sub210CreditBox.Name = "sub210CreditBox";
+            sub210CreditBox.Size = new Size(65, 28);
+            sub210CreditBox.TabIndex = 49;
+            // 
+            // sub29CreditBox
+            // 
+            sub29CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub29CreditBox.FormattingEnabled = true;
+            sub29CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub29CreditBox.Location = new Point(392, 382);
+            sub29CreditBox.Name = "sub29CreditBox";
+            sub29CreditBox.Size = new Size(65, 28);
+            sub29CreditBox.TabIndex = 48;
+            // 
+            // sub22CreditBox
+            // 
+            sub22CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub22CreditBox.FormattingEnabled = true;
+            sub22CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub22CreditBox.Location = new Point(392, 107);
+            sub22CreditBox.Name = "sub22CreditBox";
+            sub22CreditBox.Size = new Size(65, 28);
+            sub22CreditBox.TabIndex = 46;
+            // 
+            // sub23CreditBox
+            // 
+            sub23CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub23CreditBox.FormattingEnabled = true;
+            sub23CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub23CreditBox.Location = new Point(392, 147);
+            sub23CreditBox.Name = "sub23CreditBox";
+            sub23CreditBox.Size = new Size(65, 28);
+            sub23CreditBox.TabIndex = 45;
+            // 
+            // sub24CreditBox
+            // 
+            sub24CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub24CreditBox.FormattingEnabled = true;
+            sub24CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub24CreditBox.Location = new Point(392, 189);
+            sub24CreditBox.Name = "sub24CreditBox";
+            sub24CreditBox.Size = new Size(65, 28);
+            sub24CreditBox.TabIndex = 44;
+            // 
+            // sub25CreditBox
+            // 
+            sub25CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub25CreditBox.FormattingEnabled = true;
+            sub25CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub25CreditBox.Location = new Point(392, 228);
+            sub25CreditBox.Name = "sub25CreditBox";
+            sub25CreditBox.Size = new Size(65, 28);
+            sub25CreditBox.TabIndex = 43;
+            // 
+            // sub26CreditBox
+            // 
+            sub26CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub26CreditBox.FormattingEnabled = true;
+            sub26CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub26CreditBox.Location = new Point(392, 264);
+            sub26CreditBox.Name = "sub26CreditBox";
+            sub26CreditBox.Size = new Size(65, 28);
+            sub26CreditBox.TabIndex = 42;
+            // 
+            // sub27CreditBox
+            // 
+            sub27CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub27CreditBox.FormattingEnabled = true;
+            sub27CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub27CreditBox.Location = new Point(392, 302);
+            sub27CreditBox.Name = "sub27CreditBox";
+            sub27CreditBox.Size = new Size(65, 28);
+            sub27CreditBox.TabIndex = 41;
+            // 
+            // sub28CreditBox
+            // 
+            sub28CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub28CreditBox.FormattingEnabled = true;
+            sub28CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub28CreditBox.Location = new Point(392, 342);
+            sub28CreditBox.Name = "sub28CreditBox";
+            sub28CreditBox.Size = new Size(65, 28);
+            sub28CreditBox.TabIndex = 40;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(392, 30);
+            label15.Name = "label15";
+            label15.Size = new Size(65, 28);
+            label15.TabIndex = 39;
+            label15.Text = "Credit";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(292, 30);
+            label14.Name = "label14";
+            label14.Size = new Size(65, 28);
+            label14.TabIndex = 38;
+            label14.Text = "Grade";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(111, 30);
+            label6.Name = "label6";
+            label6.Size = new Size(77, 28);
+            label6.TabIndex = 37;
+            label6.Text = "Subject";
+            // 
+            // sub21CreditBox
+            // 
+            sub21CreditBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub21CreditBox.FormattingEnabled = true;
+            sub21CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
+            sub21CreditBox.Location = new Point(392, 67);
+            sub21CreditBox.Name = "sub21CreditBox";
+            sub21CreditBox.Size = new Size(65, 28);
+            sub21CreditBox.TabIndex = 36;
+            // 
+            // sub212grdBox
+            // 
+            sub212grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub212grdBox.FormattingEnabled = true;
+            sub212grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub212grdBox.Location = new Point(292, 507);
+            sub212grdBox.Name = "sub212grdBox";
+            sub212grdBox.Size = new Size(73, 28);
+            sub212grdBox.TabIndex = 35;
+            // 
+            // sub22grdBox
+            // 
+            sub22grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub22grdBox.FormattingEnabled = true;
+            sub22grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub22grdBox.Location = new Point(292, 107);
+            sub22grdBox.Name = "sub22grdBox";
+            sub22grdBox.Size = new Size(73, 28);
+            sub22grdBox.TabIndex = 34;
+            // 
+            // sub23grdBox
+            // 
+            sub23grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub23grdBox.FormattingEnabled = true;
+            sub23grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub23grdBox.Location = new Point(292, 147);
+            sub23grdBox.Name = "sub23grdBox";
+            sub23grdBox.Size = new Size(73, 28);
+            sub23grdBox.TabIndex = 33;
+            // 
+            // sub211grdBox
+            // 
+            sub211grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub211grdBox.FormattingEnabled = true;
+            sub211grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub211grdBox.Location = new Point(292, 469);
+            sub211grdBox.Name = "sub211grdBox";
+            sub211grdBox.Size = new Size(73, 28);
+            sub211grdBox.TabIndex = 32;
+            // 
+            // sub210grdBox
+            // 
+            sub210grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub210grdBox.FormattingEnabled = true;
+            sub210grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub210grdBox.Location = new Point(292, 427);
+            sub210grdBox.Name = "sub210grdBox";
+            sub210grdBox.Size = new Size(73, 28);
+            sub210grdBox.TabIndex = 31;
+            // 
+            // sub29grdBox
+            // 
+            sub29grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub29grdBox.FormattingEnabled = true;
+            sub29grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub29grdBox.Location = new Point(292, 387);
+            sub29grdBox.Name = "sub29grdBox";
+            sub29grdBox.Size = new Size(73, 28);
+            sub29grdBox.TabIndex = 30;
+            // 
+            // sub24grdBox
+            // 
+            sub24grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub24grdBox.FormattingEnabled = true;
+            sub24grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub24grdBox.Location = new Point(292, 189);
+            sub24grdBox.Name = "sub24grdBox";
+            sub24grdBox.Size = new Size(73, 28);
+            sub24grdBox.TabIndex = 29;
+            // 
+            // sub25grdBox
+            // 
+            sub25grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub25grdBox.FormattingEnabled = true;
+            sub25grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub25grdBox.Location = new Point(292, 229);
+            sub25grdBox.Name = "sub25grdBox";
+            sub25grdBox.Size = new Size(73, 28);
+            sub25grdBox.TabIndex = 28;
+            // 
+            // sub28grdBox
+            // 
+            sub28grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub28grdBox.FormattingEnabled = true;
+            sub28grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub28grdBox.Location = new Point(292, 347);
+            sub28grdBox.Name = "sub28grdBox";
+            sub28grdBox.Size = new Size(73, 28);
+            sub28grdBox.TabIndex = 27;
+            // 
+            // sub27grdBox
+            // 
+            sub27grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub27grdBox.FormattingEnabled = true;
+            sub27grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub27grdBox.Location = new Point(292, 307);
+            sub27grdBox.Name = "sub27grdBox";
+            sub27grdBox.Size = new Size(73, 28);
+            sub27grdBox.TabIndex = 26;
+            // 
+            // sub26grdBox
+            // 
+            sub26grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub26grdBox.FormattingEnabled = true;
+            sub26grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub26grdBox.Location = new Point(292, 269);
+            sub26grdBox.Name = "sub26grdBox";
+            sub26grdBox.Size = new Size(73, 28);
+            sub26grdBox.TabIndex = 25;
+            // 
+            // sub21grdBox
+            // 
+            sub21grdBox.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            sub21grdBox.FormattingEnabled = true;
+            sub21grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
+            sub21grdBox.Location = new Point(292, 67);
+            sub21grdBox.Name = "sub21grdBox";
+            sub21grdBox.Size = new Size(73, 28);
+            sub21grdBox.TabIndex = 24;
+            // 
             // textBox12
             // 
+            textBox12.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox12.Location = new Point(19, 304);
             textBox12.Name = "textBox12";
-            textBox12.Size = new Size(250, 34);
+            textBox12.Size = new Size(250, 27);
             textBox12.TabIndex = 17;
             // 
             // textBox11
             // 
+            textBox11.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox11.Location = new Point(19, 344);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(250, 34);
+            textBox11.Size = new Size(250, 27);
             textBox11.TabIndex = 16;
             // 
             // textBox10
             // 
+            textBox10.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox10.Location = new Point(19, 384);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(250, 34);
+            textBox10.Size = new Size(250, 27);
             textBox10.TabIndex = 15;
             // 
             // textBox9
             // 
+            textBox9.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox9.Location = new Point(19, 424);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(250, 34);
+            textBox9.Size = new Size(250, 27);
             textBox9.TabIndex = 14;
             // 
             // textBox8
             // 
+            textBox8.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox8.Location = new Point(19, 464);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(250, 34);
+            textBox8.Size = new Size(250, 27);
             textBox8.TabIndex = 13;
             // 
             // textBox7
             // 
+            textBox7.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox7.Location = new Point(19, 504);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(250, 34);
+            textBox7.Size = new Size(250, 27);
             textBox7.TabIndex = 12;
             // 
             // textBox6
             // 
+            textBox6.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox6.Location = new Point(19, 144);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(250, 34);
+            textBox6.Size = new Size(250, 27);
             textBox6.TabIndex = 11;
             // 
             // textBox5
             // 
+            textBox5.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.Location = new Point(19, 264);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(250, 34);
+            textBox5.Size = new Size(250, 27);
             textBox5.TabIndex = 10;
             // 
             // textBox4
             // 
+            textBox4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.Location = new Point(19, 224);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(250, 34);
+            textBox4.Size = new Size(250, 27);
             textBox4.TabIndex = 9;
             // 
             // textBox3
             // 
+            textBox3.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.Location = new Point(19, 184);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(250, 34);
+            textBox3.Size = new Size(250, 27);
             textBox3.TabIndex = 8;
             // 
             // textBox2
             // 
+            textBox2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(19, 104);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 34);
+            textBox2.Size = new Size(250, 27);
             textBox2.TabIndex = 7;
             // 
             // textBox1
             // 
+            textBox1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(19, 64);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 34);
+            textBox1.Size = new Size(250, 27);
             textBox1.TabIndex = 6;
             // 
             // label2
@@ -501,261 +780,6 @@
             totGpaLbl.Size = new Size(50, 20);
             totGpaLbl.TabIndex = 5;
             totGpaLbl.Text = "label6";
-            // 
-            // sub21grdBox
-            // 
-            sub21grdBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            sub21grdBox.FormattingEnabled = true;
-            sub21grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            sub21grdBox.Location = new Point(292, 67);
-            sub21grdBox.Name = "sub21grdBox";
-            sub21grdBox.Size = new Size(73, 31);
-            sub21grdBox.TabIndex = 24;
-            // 
-            // comboBox2
-            // 
-            comboBox2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox2.Location = new Point(292, 269);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(73, 31);
-            comboBox2.TabIndex = 25;
-            // 
-            // comboBox3
-            // 
-            comboBox3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox3.Location = new Point(292, 307);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(73, 31);
-            comboBox3.TabIndex = 26;
-            // 
-            // comboBox4
-            // 
-            comboBox4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox4.Location = new Point(292, 347);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(73, 31);
-            comboBox4.TabIndex = 27;
-            // 
-            // comboBox5
-            // 
-            comboBox5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox5.Location = new Point(292, 229);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(73, 31);
-            comboBox5.TabIndex = 28;
-            // 
-            // sub24grdBox
-            // 
-            sub24grdBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            sub24grdBox.FormattingEnabled = true;
-            sub24grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            sub24grdBox.Location = new Point(292, 189);
-            sub24grdBox.Name = "sub24grdBox";
-            sub24grdBox.Size = new Size(73, 31);
-            sub24grdBox.TabIndex = 29;
-            // 
-            // comboBox11
-            // 
-            comboBox11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox11.FormattingEnabled = true;
-            comboBox11.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox11.Location = new Point(292, 387);
-            comboBox11.Name = "comboBox11";
-            comboBox11.Size = new Size(73, 31);
-            comboBox11.TabIndex = 30;
-            // 
-            // comboBox12
-            // 
-            comboBox12.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox12.FormattingEnabled = true;
-            comboBox12.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox12.Location = new Point(292, 427);
-            comboBox12.Name = "comboBox12";
-            comboBox12.Size = new Size(73, 31);
-            comboBox12.TabIndex = 31;
-            // 
-            // comboBox13
-            // 
-            comboBox13.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox13.FormattingEnabled = true;
-            comboBox13.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox13.Location = new Point(292, 469);
-            comboBox13.Name = "comboBox13";
-            comboBox13.Size = new Size(73, 31);
-            comboBox13.TabIndex = 32;
-            // 
-            // sub23grdBox
-            // 
-            sub23grdBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            sub23grdBox.FormattingEnabled = true;
-            sub23grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            sub23grdBox.Location = new Point(292, 147);
-            sub23grdBox.Name = "sub23grdBox";
-            sub23grdBox.Size = new Size(73, 31);
-            sub23grdBox.TabIndex = 33;
-            // 
-            // sub22grdBox
-            // 
-            sub22grdBox.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            sub22grdBox.FormattingEnabled = true;
-            sub22grdBox.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            sub22grdBox.Location = new Point(292, 107);
-            sub22grdBox.Name = "sub22grdBox";
-            sub22grdBox.Size = new Size(73, 31);
-            sub22grdBox.TabIndex = 34;
-            // 
-            // comboBox16
-            // 
-            comboBox16.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox16.FormattingEnabled = true;
-            comboBox16.Items.AddRange(new object[] { "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "E" });
-            comboBox16.Location = new Point(292, 507);
-            comboBox16.Name = "comboBox16";
-            comboBox16.Size = new Size(73, 31);
-            comboBox16.TabIndex = 35;
-            // 
-            // sub21CreditBox
-            // 
-            sub21CreditBox.FormattingEnabled = true;
-            sub21CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            sub21CreditBox.Location = new Point(392, 67);
-            sub21CreditBox.Name = "sub21CreditBox";
-            sub21CreditBox.Size = new Size(65, 36);
-            sub21CreditBox.TabIndex = 36;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(111, 30);
-            label6.Name = "label6";
-            label6.Size = new Size(77, 28);
-            label6.TabIndex = 37;
-            label6.Text = "Subject";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(292, 30);
-            label14.Name = "label14";
-            label14.Size = new Size(65, 28);
-            label14.TabIndex = 38;
-            label14.Text = "Grade";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(392, 30);
-            label15.Name = "label15";
-            label15.Size = new Size(65, 28);
-            label15.TabIndex = 39;
-            label15.Text = "Credit";
-            // 
-            // comboBox18
-            // 
-            comboBox18.FormattingEnabled = true;
-            comboBox18.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox18.Location = new Point(392, 342);
-            comboBox18.Name = "comboBox18";
-            comboBox18.Size = new Size(65, 36);
-            comboBox18.TabIndex = 40;
-            // 
-            // comboBox19
-            // 
-            comboBox19.FormattingEnabled = true;
-            comboBox19.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox19.Location = new Point(392, 302);
-            comboBox19.Name = "comboBox19";
-            comboBox19.Size = new Size(65, 36);
-            comboBox19.TabIndex = 41;
-            // 
-            // comboBox20
-            // 
-            comboBox20.FormattingEnabled = true;
-            comboBox20.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox20.Location = new Point(392, 264);
-            comboBox20.Name = "comboBox20";
-            comboBox20.Size = new Size(65, 36);
-            comboBox20.TabIndex = 42;
-            // 
-            // comboBox21
-            // 
-            comboBox21.FormattingEnabled = true;
-            comboBox21.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox21.Location = new Point(392, 228);
-            comboBox21.Name = "comboBox21";
-            comboBox21.Size = new Size(65, 36);
-            comboBox21.TabIndex = 43;
-            // 
-            // sub24CreditBox
-            // 
-            sub24CreditBox.FormattingEnabled = true;
-            sub24CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            sub24CreditBox.Location = new Point(392, 189);
-            sub24CreditBox.Name = "sub24CreditBox";
-            sub24CreditBox.Size = new Size(65, 36);
-            sub24CreditBox.TabIndex = 44;
-            // 
-            // sub23CreditBox
-            // 
-            sub23CreditBox.FormattingEnabled = true;
-            sub23CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            sub23CreditBox.Location = new Point(392, 147);
-            sub23CreditBox.Name = "sub23CreditBox";
-            sub23CreditBox.Size = new Size(65, 36);
-            sub23CreditBox.TabIndex = 45;
-            // 
-            // sub22CreditBox
-            // 
-            sub22CreditBox.FormattingEnabled = true;
-            sub22CreditBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            sub22CreditBox.Location = new Point(392, 107);
-            sub22CreditBox.Name = "sub22CreditBox";
-            sub22CreditBox.Size = new Size(65, 36);
-            sub22CreditBox.TabIndex = 46;
-            // 
-            // comboBox26
-            // 
-            comboBox26.FormattingEnabled = true;
-            comboBox26.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox26.Location = new Point(392, 382);
-            comboBox26.Name = "comboBox26";
-            comboBox26.Size = new Size(65, 36);
-            comboBox26.TabIndex = 48;
-            // 
-            // comboBox27
-            // 
-            comboBox27.FormattingEnabled = true;
-            comboBox27.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox27.Location = new Point(392, 424);
-            comboBox27.Name = "comboBox27";
-            comboBox27.Size = new Size(65, 36);
-            comboBox27.TabIndex = 49;
-            // 
-            // comboBox28
-            // 
-            comboBox28.FormattingEnabled = true;
-            comboBox28.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox28.Location = new Point(392, 462);
-            comboBox28.Name = "comboBox28";
-            comboBox28.Size = new Size(65, 36);
-            comboBox28.TabIndex = 50;
-            // 
-            // comboBox29
-            // 
-            comboBox29.FormattingEnabled = true;
-            comboBox29.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8" });
-            comboBox29.Location = new Point(392, 504);
-            comboBox29.Name = "comboBox29";
-            comboBox29.Size = new Size(65, 36);
-            comboBox29.TabIndex = 51;
             // 
             // button1
             // 
@@ -839,33 +863,33 @@
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
-        private ComboBox comboBox16;
+        private ComboBox sub212grdBox;
         private ComboBox sub22grdBox;
         private ComboBox sub23grdBox;
-        private ComboBox comboBox13;
-        private ComboBox comboBox12;
-        private ComboBox comboBox11;
+        private ComboBox sub211grdBox;
+        private ComboBox sub210grdBox;
+        private ComboBox sub29grdBox;
         private ComboBox sub24grdBox;
-        private ComboBox comboBox5;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
+        private ComboBox sub25grdBox;
+        private ComboBox sub28grdBox;
+        private ComboBox sub27grdBox;
+        private ComboBox sub26grdBox;
         private ComboBox sub21grdBox;
         private Label label15;
         private Label label14;
         private Label label6;
         private ComboBox sub21CreditBox;
-        private ComboBox comboBox29;
-        private ComboBox comboBox28;
-        private ComboBox comboBox27;
-        private ComboBox comboBox26;
+        private ComboBox sub212CreditBox;
+        private ComboBox sub211CreditBox;
+        private ComboBox sub210CreditBox;
+        private ComboBox sub29CreditBox;
         private ComboBox sub22CreditBox;
         private ComboBox sub23CreditBox;
         private ComboBox sub24CreditBox;
-        private ComboBox comboBox21;
-        private ComboBox comboBox20;
-        private ComboBox comboBox19;
-        private ComboBox comboBox18;
+        private ComboBox sub25CreditBox;
+        private ComboBox sub26CreditBox;
+        private ComboBox sub27CreditBox;
+        private ComboBox sub28CreditBox;
         private Button button1;
         private Label label16;
     }
