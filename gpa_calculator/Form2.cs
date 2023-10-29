@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace gpa_calculator
 {
     public partial class Year1 : Form
     {
+
+        private string connectionString = "Data Source= C:\\Users\\Savinda\\source\\repos\\gpa_calculator\\gpa_calculator\\gpaCalDB.db";
+        private SQLiteConnection connection;
+        private SQLiteCommand command;
+
         public Year1()
         {
             InitializeComponent();
+            connection = new SQLiteConnection(connectionString);
+            command = new SQLiteCommand(connection);
         }
 
         double totalGpa, credit, weight, totCredit;
@@ -129,6 +137,9 @@ namespace gpa_calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            InsertData();
+
             double totalGpa = 0;
             double totalCredits = 0;
 
@@ -167,6 +178,58 @@ namespace gpa_calculator
             return 0; // Grade not found in the dictionary, return a default value.
         }
 
+        private void Year1_Load(object sender, EventArgs e)
+        {
+            connection.Open();
+            Console.WriteLine("Database opened");
+            connection.Close();
+
+            RetrieveData(); //load data to form 
+
+        }
+
+        private void InsertData()
+        {
+            connection.Open();
+            string insertQuery = "INSERT INTO Year1sem1 (subject,weight, grade) VALUES ( '" + subject21Box.Text + "' ,'" + sub21CreditBox.Text + "', '" + sub21grdBox.Text + "')";
+            command.CommandText = insertQuery;
+            //command.Parameters.AddWithValue("@Value1", "Data1");
+            //command.Parameters.AddWithValue("@Value2", "Data2");
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        private void RetrieveData()
+        {
+            connection.Open();
+            string selectQuery = "SELECT * FROM Year1sem1";
+            command.CommandText = selectQuery;
+            SQLiteDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                // Process and display data
+                string data1 = reader["weight"].ToString();
+                string data2 = reader["grade"].ToString();
+                string data3 = reader["subject"].ToString();
+
+                string data4 = reader["weight"].ToString();
+                string data5 = reader["grade"].ToString();
+                string data6 = reader["subject"].ToString();
+
+                // Display data in the form or do whatever you need
+
+                sub21CreditBox.Text = data1;
+                sub21grdBox.Text = data2;
+                subject21Box.Text = data3;
+
+                sub22CreditBox.Text = data4;
+                sub22grdBox.Text = data5;
+                subject22Box.Text = data6;
+
+            }
+            reader.Close();
+            connection.Close();
+        }
 
     }
 }
